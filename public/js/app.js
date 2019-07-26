@@ -1924,10 +1924,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     fetchData: function fetchData() {
+      var _this = this;
+
       this.error = this.users = null;
       this.loading = true;
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/users').then(function (response) {
-        console.log(response);
+        _this.loading = false;
+        _this.users = response.data;
       });
     }
   }
