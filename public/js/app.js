@@ -1931,6 +1931,9 @@ __webpack_require__.r(__webpack_exports__);
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/users').then(function (response) {
         _this.loading = false;
         _this.users = response.data;
+      })["catch"](function (error) {
+        _this.loading = false;
+        _this.error = error.response.data.message || error.message;
       });
     }
   }
