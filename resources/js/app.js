@@ -3,9 +3,11 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-import App from './views/App'
-import Hello from './views/Hello'
-import Home from './views/Home'
+
+import App from '../assets/js/views/App'
+import Hello from '../assets/js/views/Hello'
+import Home from '../assets/js/views/Home'
+ 
 
 const router = new VueRouter({
     mode: 'history',
