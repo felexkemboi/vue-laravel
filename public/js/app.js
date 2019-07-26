@@ -15651,9 +15651,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_js_views_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/js/views/App */ "./resources/assets/js/views/App.vue");
 /* harmony import */ var _assets_js_views_Hello__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/js/views/Hello */ "./resources/assets/js/views/Hello.vue");
 /* harmony import */ var _assets_js_views_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/js/views/Home */ "./resources/assets/js/views/Home.vue");
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../assets/js/views/UsersIndex'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
 
 
 
@@ -15667,6 +15669,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/hello',
     name: 'hello',
     component: _assets_js_views_Hello__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, {
+    path: '/users',
+    name: 'users.index',
+    component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../assets/js/views/UsersIndex'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
   }]
 });
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
