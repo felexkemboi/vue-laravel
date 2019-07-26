@@ -12,3 +12,11 @@
 */
 
 Route::get('/{any}', 'SpaController@index') -> where('any','.*');
+
+Route::get('/users', function(){
+	if(ran(1,10)<3){
+		abort(500,'We could not retrieve the users');
+	}
+
+	return factory('App\User',10) ->make();
+});
